@@ -28,8 +28,8 @@ const router = new Router({
       props: true
     },
     {
-      path: '/book/:bookId/chapter/:mode/:chapterId?',
-      name: 'add-chapter',
+      path: '/book/:bookId/chapter/:actionMode/:chapterId?',
+      name: 'chapter',
       component: require('@/components/ChapterView').default,
       props: true
     },

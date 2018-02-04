@@ -61,7 +61,7 @@
                 <v-card-title><div class="title">Chapters</div></v-card-title>
                 <v-card-text>
                   <v-list>
-                    <v-list-tile ripple v-for="chapter in book.chapters" v-if="chapter" :key="chapter.name">
+                    <v-list-tile :to="'/book/' + book._id + '/chapter/view/' + chapter._id" ripple v-for="chapter in book.chapters" v-if="chapter" :key="chapter.name">
                       <v-list-tile-content>
                         <v-list-tile-title v-text="chapter.name"></v-list-tile-title>
                       </v-list-tile-content>
